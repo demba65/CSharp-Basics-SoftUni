@@ -6,11 +6,11 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            int kucheta = int.Parse(Console.ReadLine());
-            int kotki = int.Parse(Console.ReadLine());
-            double cenaKucheta = kucheta * 2.50;
-            int cenaKotki = kotki * 4;
-            double sum = cenaKucheta + cenaKotki;
+            int dogs = int.Parse(Console.ReadLine());
+            int cats = int.Parse(Console.ReadLine());
+            double dogsPrice = dogs * 2.50;
+            int catsPrice = cats * 4;
+            double sum = dogsPrice + catsPrice;
             string a = sum + " lv.";
             Console.WriteLine(a);
         } 
