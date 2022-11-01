@@ -8,10 +8,10 @@ namespace MyApp
         {
             double kvMetri = double.Parse(Console.ReadLine());
             double sum = kvMetri * 7.61;
-            double otstupka = 0.18 * sum;
-            double sumOtstupka = sum - otstupka;
-            Console.WriteLine($"The final price is: {sumOtstupka} lv.");
-            Console.WriteLine($"The discount is: {otstupka} lv.");
+            double discount = 0.18 * sum;
+            double sumDiscount = sum - discount;
+            Console.WriteLine($"The final price is: {sumDiscount} lv.");
+            Console.WriteLine($"The discount is: {discount} lv.");
            
         }
 
