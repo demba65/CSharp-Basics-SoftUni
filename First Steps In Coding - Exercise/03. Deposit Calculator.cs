@@ -6,12 +6,12 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            double depoziranaSuma = double.Parse(Console.ReadLine());
-            int srokNaDepozita = int.Parse(Console.ReadLine());
-            double godishenLihvenProcent = double.Parse(Console.ReadLine());
-            double natrupanaLihva = depoziranaSuma * godishenLihvenProcent / 100;
-            double lihvaZaEdinMesec = natrupanaLihva / 12;
-            double sum = depoziranaSuma + srokNaDepozita * lihvaZaEdinMesec;
+            double depositSum = double.Parse(Console.ReadLine());
+            int periodDepozid = int.Parse(Console.ReadLine());
+            double yearRateOfInterest = double.Parse(Console.ReadLine());
+            double interest = depositSum * yearRateOfInterest / 100;
+            double interestOnOneMonth = interest / 12;
+            double sum = depositSum + periodDeposit * interestOnOneMonth;
             Console.WriteLine(sum);
 
         }
