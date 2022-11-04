@@ -6,23 +6,23 @@ namespace _06._Repainting
     {
         static void Main(string[] args)
         {
-            double nailon = double.Parse(Console.ReadLine()) + 2;
-            double boq = double.Parse(Console.ReadLine());
-            double razreditel = double.Parse(Console.ReadLine());
-            double chasoveNeobhodimiNaMaistorite = double.Parse(Console.ReadLine());
+            double nylon = double.Parse(Console.ReadLine()) + 2;
+            double paint = double.Parse(Console.ReadLine());
+            double thinner = double.Parse(Console.ReadLine());
+            double hoursForWorkers = double.Parse(Console.ReadLine());
             
             double nailonKvMetur = 1.50;
-            double boqLitur = 14.50;
-            double razreditelZaBoqLitur = 5;
-            double sumTorbichki = 0.40;
+            double paintLitre = 14.50;
+            double thinnerLitre = 5;
+            double pouchPrice = 0.40;
 
-            double nailonCena = nailon * nailonKvMetur;
-            double boqCena = (boq + 0.1 * boq) * boqLitur;
-            double razreditelCena = razreditel * razreditelZaBoqLitur;
+            double nylonPrice = nylon * nylonSquareMetre;
+            double paintPrice = (paint + 0.1 * paint) * paintLitre;
+            double thinnerPrice = thinner * thinnerLitre;
 
-            double razhodiZaMateriali = nailonCena + boqCena + razreditelCena + sumTorbichki;
-            double razhodiZaMaistori = (razhodiZaMateriali * 0.3) * chasoveNeobhodimiNaMaistorite;
-            double sum = razhodiZaMateriali + razhodiZaMaistori;
+            double moneyForMaterials = nylonPrice + paintPrice + thinnerPrice + pouchPrice;
+            double moneyForWorkers = (moneyForMaterials * 0.3) * hoursForWorkers;
+            double sum = moneyForMaterials + moneyForWorkers;
 
             Console.WriteLine(sum);
         }
